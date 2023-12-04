@@ -1,0 +1,27 @@
+<mat-toolbar fixed class="toolbar">
+  <button type="button" mat-icon-button (click)="drawer.toggle()">
+    <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+  </button>
+  <span class="toolbar-title">Game Planner</span>
+</mat-toolbar>
+
+<mat-drawer-container class="main-container">
+  <mat-drawer #drawer mode="side" class="nav-side">
+    @for(link of links; track link.title) {
+    <a mat-list-item :routerLink="{{ link.path }}" routerLinkActive="active">
+      <button mat-button>
+        @if (link.data?.["icon"]) {
+        <mat-icon>{{ link.data?.["icon"] }}</mat-icon>
+        }
+        <span>{{ link.title }}</span>
+      </button>
+    </a>
+    @if(!$last) {
+    <mat-divider />
+    } }
+  </mat-drawer>
+
+  <div>
+    <router-outlet></router-outlet>
+  </div>
+</mat-drawer-container>
