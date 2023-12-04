@@ -1,11 +1,15 @@
+@use "../shared/_variables.scss" as variables;
+
 .toolbar {
   position: fixed;
   width: 100%;
   z-index: 100;
-  height: 64px;
+  height: variables.$header_height;
+  overflow-y: hidden;
+  overflow-x: hidden;
 
   .toolbar-title {
-    margin: 0 auto; 
+    margin: 0 auto;
   }
 }
 
@@ -17,11 +21,21 @@
 }
 
 .nav-side {
-  min-width: 250px;
+  position: fixed;
 
-  button {
-    width: 100%;
-    font-size: 1.5em;
-    padding: 30px;
-  }
+  border-top-left-radius: variables.$border_radius;
+  border-top-right-radius: variables.$border_radius;
+  border-bottom-left-radius: variables.$border_radius;
+  border-bottom-right-radius: variables.$border_radius;
+
+  min-width: 250px;
+  margin: 100px 10px 10px 20px;
 }
+
+button.side-bar-button {
+  width: 100%;
+  font-size: 1.5em;
+  padding: 30px;
+}
+
+

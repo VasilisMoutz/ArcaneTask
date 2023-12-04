@@ -9,7 +9,7 @@
   <mat-drawer #drawer mode="side" class="nav-side">
     @for(link of links; track link.title) {
     <a mat-list-item :routerLink="{{ link.path }}" routerLinkActive="active">
-      <button mat-button>
+      <button mat-button class="side-bar-button">
         @if (link.data?.["icon"]) {
         <mat-icon>{{ link.data?.["icon"] }}</mat-icon>
         }

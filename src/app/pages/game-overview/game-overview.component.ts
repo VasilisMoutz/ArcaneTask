@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { GameOverview } from '../../../model/GameOverview.model';
+import { AbstractBaseComponent } from '../../components/AbstractBaseComponent';
 
 
 @Component({
@@ -12,7 +13,7 @@ import { GameOverview } from '../../../model/GameOverview.model';
   templateUrl: './game-overview.component.html',
   styleUrl: './game-overview.component.scss',
 })
-export class GameOverviewComponent {
+export class GameOverviewComponent extends AbstractBaseComponent {
   games: GameOverview[] = [
     {
       id: 1,
