@@ -13,6 +13,11 @@
   }
 }
 
+.app-container {
+  margin: 20px;
+  margin-left: 30px;
+}
+
 .main-container {
   margin-top: 64px;
   width: 100%; // fill out the entire width of the viewport
@@ -29,7 +34,7 @@
   border-bottom-right-radius: variables.$border_radius;
 
   min-width: 250px;
-  margin: 100px 10px 10px 20px;
+  margin: 80px 10px 10px 10px;
 }
 
 button.side-bar-button {
@@ -37,5 +42,6 @@ button.side-bar-button {
   font-size: 1.5em;
   padding: 30px;
 }
+
 
 

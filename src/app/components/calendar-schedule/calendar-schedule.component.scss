@@ -1,0 +1,19 @@
+.widget-card {
+  width: 400px;
+  height: 550px;
+  overflow: hidden !important;
+
+  .fc-scroller fc-scroller-liquid-absolute {
+    overflow: hidden !important;
+  }
+
+  div:has(> a) {
+    background-color: red; // Hier die gewünschte Hintergrundfarbe einfügen
+  }
+}
+
+.calendar {
+  width: 100%;
+  height: 450px;
+  overflow: hidden !important;
+}

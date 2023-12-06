@@ -12,22 +12,25 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatSidenavModule } from '@angular/material/sidenav'; // Add this import
 import { MatSlideToggleModule } from '@angular/material/slide-toggle'; // Add this import
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-@NgModule({ 
-    imports: [
-        BrowserAnimationsModule,
-        BrowserModule,
-        AppRoutingModule,
-        MatToolbarModule,
-        MatButtonModule,
-        MatSlideToggleModule,
-        MatIconModule,
-        MatSidenavModule,
-        MatDividerModule,
-        MatGridListModule,
-        MatCardModule,
-    ],
-    declarations: [AppComponent],
-    providers: [],
-    bootstrap: [AppComponent],
+import { CalendarSchedulerModule } from './components/calendar-schedule/calendar-schedule.module';
+
+@NgModule({
+  imports: [
+    BrowserAnimationsModule,
+    BrowserModule,
+    AppRoutingModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatSlideToggleModule,
+    MatIconModule,
+    MatSidenavModule,
+    MatDividerModule,
+    MatGridListModule,
+    MatCardModule,
+    CalendarSchedulerModule
+  ],
+  declarations: [AppComponent],
+  providers: [],
+  bootstrap: [AppComponent],
 })
 export class AppModule {}

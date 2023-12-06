@@ -5,7 +5,6 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { GameOverview } from '../../../model/GameOverview.model';
 import { AbstractBaseComponent } from '../../components/AbstractBaseComponent';
 
-
 @Component({
   selector: 'app-game-overview',
   standalone: true,
