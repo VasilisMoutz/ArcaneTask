@@ -6,6 +6,8 @@ export type CalendarEvent = {
   url?: string;
   backgroundColor?: string;
   textColor?: string;
-  extendedProps?: any;
   description?: string;
+  extendedProps?: {
+    tags: Map<string, string>;
+  };
 };

@@ -1,0 +1,63 @@
+<div class="calendar-event-dialog">
+  <div class="dialog-header">
+    <section>
+      <div class="example-label" mat-dialog-title>{{ data.title }}</div>
+      <div class="example-button-row">
+        <div class="example-flex-container">
+          @if(!editMode) {
+          <button
+            mat-icon-button
+            aria-label="Example icon button with a open in new tab icon"
+            (click)="enableEdit()"
+          >
+            <mat-icon>edit</mat-icon>
+          </button>
+          } @else {
+          <button
+            mat-icon-button
+            color="success"
+            aria-label="Example icon button with a open in new tab icon"
+            (click)="saveChanges()"
+          >
+            <mat-icon>save</mat-icon>
+          </button>
+          }
+          <button
+            mat-icon-button
+            color="warn"
+            aria-label="Example icon button with a heart icon"
+          >
+            <mat-icon>delete</mat-icon>
+          </button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div mat-dialog-content>
+    <div class="tag-list">
+      <ng-container *ngFor="let tag of data.extendedProps?.tags | keyvalue">
+        <mat-form-field>
+          <mat-icon>{{ tag.key }}</mat-icon>
+          <span>{{ tag.value }}</span>
+          <input matInput [disabled]="!editMode" />
+        </mat-form-field>
+      </ng-container>
+    </div>
+    <mat-form-field>
+      <mat-label>{{ formattedDate }}</mat-label>
+      <input
+        matInput
+        [matDatepicker]="picker3"
+        [value]="data.start"
+        [disabled]="!editMode"
+      />
+      <mat-hint>MM/DD/YYYY</mat-hint>
+      <mat-datepicker-toggle
+        matIconSuffix
+        [for]="picker3"
+      ></mat-datepicker-toggle>
+      <mat-datepicker #picker3></mat-datepicker>
+    </mat-form-field>
+  </div>
+</div>

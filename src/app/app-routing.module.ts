@@ -7,6 +7,13 @@ import { ProfileComponent } from './pages/profile/profile.component';
 
 const routes: Routes = [
   {
+    path: '',
+    redirectTo: 'dashboard',
+    pathMatch: 'full',
+    title: 'Dashboard',
+    data: { icon: 'dashboard' },
+  },
+  {
     path: 'dashboard',
     component: DashboardComponent,
     title: 'Dashboard',
