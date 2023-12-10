@@ -16,12 +16,15 @@
 .app-container {
   margin: 20px;
   margin-left: 30px;
+  overflow: hidden;
 }
 
 .main-container {
-  margin-top: 64px;
+  overflow: hidden;
+  // margin-top: 64px;
+  padding-top: 64px;
   width: 100%; // fill out the entire width of the viewport
-  height: 100vh; // fill out the entire height of the viewport
+  height: 100%; // fill out the entire height of the viewport
   border: 1px solid rgba(0, 0, 0, 0.5);
 }
 

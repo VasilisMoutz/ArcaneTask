@@ -73,8 +73,11 @@ export class CalendarScheduleComponent
     },
   };
 
-  openDialog(data: CalendarEvent, component: any) {
-    this.dialog.open(component, { data });
+  openDialog(eventData: CalendarEvent, component: any) {
+    this.dialog.open(component, {
+      data: eventData,
+      autoFocus: false,
+    });
   }
 
   private convertToCalendarEvent(event: EventImpl): CalendarEvent {
