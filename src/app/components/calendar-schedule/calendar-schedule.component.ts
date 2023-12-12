@@ -7,6 +7,7 @@ import { CalendarEvent } from '../../../model/calendarevent.model';
 import { AbstractBaseComponent } from '../AbstractBaseComponent';
 import { CalendarEventDialogComponent } from '../calendar-event-dialog/calendar-event-dialog.component';
 import { EventImpl } from '@fullcalendar/core/internal';
+import timeGridPlugin from '@fullcalendar/timegrid';
 
 @Component({
   selector: 'app-calendar-schedule',
@@ -20,7 +21,7 @@ export class CalendarScheduleComponent
   userEvents: CalendarEvent[] = [
     {
       title: 'Event 1',
-      date: '2023-12-06',
+      date: '2023-12-06 09:00',
       backgroundColor: 'red',
       textColor: 'black',
     },
@@ -44,17 +45,18 @@ export class CalendarScheduleComponent
   ngOnInit(): void {}
 
   calendarOptions: CalendarOptions = {
-    plugins: [dayGridPlugin, interactionPlugin],
-    initialView: 'dayGridWeek',
+    plugins: [dayGridPlugin, interactionPlugin, timeGridPlugin],
+    initialView: 'timeGridDay',
     headerToolbar: {
       left: 'prev,next',
       center: 'title',
-      right: 'dayGridWeek,dayGridDay', // user can switch between the two
+      right: 'timeGridWeek,dayGridDay', // user can switch between the two
     },
     weekends: true,
     events: this.userEvents,
     themeSystem: 'bootstrap5',
     locale: 'de',
+    height: 450,
     eventClick: (info) => {
       console.log('Event ', info, ' wurde angeklickt');
       this.openDialog(

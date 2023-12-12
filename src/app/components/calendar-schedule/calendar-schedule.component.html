@@ -1,14 +1,11 @@
 <mat-card class="widget-card">
-  <mat-card-header>
-    <mat-card-title>
-      <h2>Calendar</h2>
-    </mat-card-title>
-  </mat-card-header>
   <mat-card-content>
-    <div>
-      <full-calendar
-        [options]="calendarOptions"
-        class="calendar"
-      ></full-calendar>
-    </div> </mat-card-content
-></mat-card>
+    <full-calendar [options]="calendarOptions" class="calendar"></full-calendar>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-flat-button color="primary">
+      <mat-icon>add</mat-icon>
+      <span>Add Event</span>
+    </button>
+  </mat-card-actions>
+</mat-card>

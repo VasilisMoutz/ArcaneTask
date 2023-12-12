@@ -1,19 +1,9 @@
-.widget-card {
-  min-width: 600px;
-  min-height: 550px;
-  overflow: hidden !important;
+@use "../../../shared/variables.scss" as variables;
 
-  .fc-scroller fc-scroller-liquid-absolute {
-    overflow: hidden !important;
-  }
-
-  div:has(> a) {
-    background-color: red; // Hier die gewünschte Hintergrundfarbe einfügen
-  }
-}
-
-.calendar {
-  width: 100%;
-  height: 450px;
-  overflow: hidden !important;
+mat-card {
+  height: 50%;
+  width: 50%;
+  margin: 10px;
+  border-radius: variables.$border_radius;
+  border: 1px solid rgba(0, 0, 0, 0.5);
 }

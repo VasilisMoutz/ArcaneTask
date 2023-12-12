@@ -1,0 +1,15 @@
+@use "../../../shared/_variables.scss" as variables;
+
+.overview-tile {
+  width: 22.5%;
+  border-radius: variables.$border_radius;
+  border: 1px solid;
+  border-color: rgba(0, 0, 0, 0.5);
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 98%;
+  margin-bottom: 10px;
+}

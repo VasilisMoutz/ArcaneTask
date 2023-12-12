@@ -6,28 +6,15 @@
       <div class="example-button-row">
         <div class="example-flex-container">
           @if(!editMode) {
-          <button
-            mat-flat-button
-            aria-label="Example icon button with a open in new tab icon"
-            (click)="enableEdit()"
-          >
+          <button mat-flat-button (click)="enableEdit()">
             <mat-icon>edit</mat-icon>
           </button>
           } @else {
-          <button
-            mat-flat-button
-            color="success"
-            aria-label="Example icon button with a open in new tab icon"
-            (click)="saveChanges()"
-          >
+          <button mat-flat-button color="success" (click)="saveChanges()">
             <mat-icon>save</mat-icon>
           </button>
           }
-          <button
-            mat-icon-button
-            color="warn"
-            aria-label="Example icon button with a heart icon"
-          >
+          <button mat-icon-button color="warn">
             <mat-icon>delete</mat-icon>
           </button>
         </div>
@@ -38,7 +25,9 @@
   <div mat-dialog-content>
     {{ eventData.extendedProps }}
     <div class="tag-list">
-      <ng-container *ngFor="let tag of eventData.extendedProps?.tags | keyvalue">
+      <ng-container
+        *ngFor="let tag of eventData.extendedProps?.tags | keyvalue"
+      >
         <mat-form-field>
           <mat-icon>{{ tag.key }}</mat-icon>
           <span>{{ tag.value }}</span>

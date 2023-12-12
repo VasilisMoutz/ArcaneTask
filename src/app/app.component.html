@@ -10,7 +10,7 @@
 </mat-toolbar>
 
 <mat-drawer-container class="main-container">
-  <mat-drawer #drawer mode="side" class="nav-side">
+  <mat-drawer #drawer mode="over" class="nav-side">
     @for(link of links; track link.title) {
     <a mat-list-item :routerLink="{{ link.path }}" routerLinkActive="active">
       <button mat-button class="side-bar-button">
