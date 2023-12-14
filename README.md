@@ -1,27 +1,47 @@
-# LifePlanner
+# GamePlan Hub
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.3.
+GamePlan Hub ist eine vielseitige Anwendung, die speziell für Gamer und Studenten entwickelt wurde. Die Anwendung bietet eine zentrale Plattform für die effiziente Verwaltung von Aufgaben, die Zusammenarbeit in Teams sowie die Planung und Organisation von Offline-Turnieren für DnD- und TCG-Events.
 
-## Development server
+## Hauptmerkmale
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Aufgabenmanagement für Gamer & Studenten
 
-## Code scaffolding
+- Erstelle und organisiere Aufgaben für dein Gaming-Leben und deine Studienprojekte.
+- Priorisiere Aufgaben, um den Fokus auf das Wichtigste zu legen.
+- Visualisiere deinen Fortschritt und erhalte Belohnungen für erledigte Aufgaben.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Teamkollaboration
 
-## Build
+- Teile Aufgaben und Projekte mit Teammitgliedern.
+- Verfolge den Fortschritt von Teammitgliedern und unterstütze bei der gemeinsamen Arbeit.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Offline-Turnierplanung
 
-## Running unit tests
+- Integrierte Funktionen für die Organisation von Offline-Turnieren für DnD- und TCG-Events.
+- Erstelle und verwalte Events, weise Teilnehmer zu und behalte den Überblick über Ergebnisse.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## So kommst du los
 
-## Running end-to-end tests
+1. **Registrierung:**
+   - Erstelle einen Account, um die volle Funktionalität der Anwendung zu nutzen.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+2. **Aufgaben erstellen:**
+   - Nutze die intuitive Benutzeroberfläche, um Aufgaben für Gaming und Studium zu erstellen.
+   - Priorisiere Aufgaben, um deinen Fokus zu optimieren.
 
-## Further help
+3. **Teamarbeit:**
+   - Lade Teammitglieder ein, um gemeinsam an Aufgaben und Projekten zu arbeiten.
+   - Verfolge den Fortschritt und teile Belohnungen für abgeschlossene Aufgaben.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+4. **Offline-Turnierorganisation:**
+   - Erstelle Events für DnD- oder TCG-Turniere.
+   - Lade Teilnehmer ein, weise sie zu und behalte den Überblick über den Turnierverlauf.
+
+## Unterstützung und Beitrag
+
+- Wenn du ein Problem findest oder eine Verbesserung vorschlagen möchtest, erstelle bitte ein Issue.
+- Wir freuen uns über Pull Requests und Beiträge zur Verbesserung der Anwendung.
+
+## Lizenz
+
+Dieses Projekt ist unter der MIT-Lizenz lizenziert. Siehe die [Lizenzdatei](LICENSE) für weitere Informationen.
