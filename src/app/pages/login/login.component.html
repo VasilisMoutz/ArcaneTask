@@ -1,0 +1,10 @@
+
+<form class="login" [formGroup]="loginForm" (submit)="submit()">
+
+    <label for="email">Email</label>
+    <input id="email" type="text" placeholder="Enter your email" formControlName="email">
+  
+    <label for="password">password</label>
+    <input id="password" type="password" placeholder="Enter your password" formControlName="password">
+    <button type="submit">Login</button>
+</form>

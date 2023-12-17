@@ -4,6 +4,7 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { GameOverviewComponent } from './pages/game-overview/game-overview.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ProfileComponent } from './pages/profile/profile.component';
+import { LoginComponent } from './pages/login/login.component';
 
 const routes: Routes = [
   {
@@ -37,6 +38,11 @@ const routes: Routes = [
     title: 'Profile',
     data: { icon: 'account_circle' },
   },
+  {
+    path: 'login',
+    component: LoginComponent,
+    title: 'Login'
+  }
 ];
 
 @NgModule({
